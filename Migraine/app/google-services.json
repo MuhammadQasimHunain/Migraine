@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "91747966180",
+    "firebase_url": "https://migraine-603de.firebaseio.com",
+    "project_id": "migraine-603de",
+    "storage_bucket": "migraine-603de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91747966180:android:7fdde4e5901eed3e",
+        "android_client_info": {
+          "package_name": "com.mit.migraine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91747966180-tv4mcm4b4dhgph6gmi095dmjjjlab5cg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mit.migraine",
+            "certificate_hash": "440dd3465c7c25adf9b9328622115792610c1e0d"
+          }
+        },
+        {
+          "client_id": "91747966180-vn6bd0ihuhfvelbao8ks9prll700mtei.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlX1qg-DzCkwhNEY_zIdtzRGaREb7v5XA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91747966180-vn6bd0ihuhfvelbao8ks9prll700mtei.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

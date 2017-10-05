@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1.0"
+    android:background="@color/colorBody" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MigraineAid will send you push notification-\r\ns twice a day to remind you to fill your diary.\r\nPlease choose the times for your notifincat-\r\nions. Please fill your diary every day.Migrain\r\ne free days are as important as those with\r\nmigraines for accurate migraine prediction"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_weight="0.1"
+        android:textColor="@color/colorAccent"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How many prompts would you\r\nlike per day?"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_weight="0.05"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+    <Switch
+        android:id="@+id/sPrompts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:checked="false"
+        android:layout_weight="0.1"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timings of the prompts"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_weight="0.05"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@color/colorPrimary">
+
+            <EditText
+                android:id="@+id/etTime1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:enabled="true"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/etTime2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:focusable="false"
+                android:enabled="true"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bSkip"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Skip"/>
+
+        <Button
+            android:id="@+id/bNext"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Done"/>
+
+    </LinearLayout>
+
+</LinearLayout>

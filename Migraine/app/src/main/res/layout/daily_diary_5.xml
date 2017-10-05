@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBody"
+    android:weightSum="1.0"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Which migraine helpers did you do today?"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_weight="0.025"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="These can also be modified from settings!"
+        android:textSize="15dp"
+        android:layout_weight="0.025"
+        android:layout_gravity="center_horizontal"/>
+
+    <ListView
+        android:id="@+id/lvHelpers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        android:layout_weight="0.9"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"/>
+
+    <Button
+        android:id="@+id/bAddMigraineHelper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_weight="0.025"
+        android:text="Select other helpers"/>
+
+    <Button
+        android:id="@+id/bDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.025"
+        android:layout_gravity="center_horizontal"
+        android:text="Done"/>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBody"
+    android:weightSum="1.0"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do you have any other symptoms?"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_weight="0.025"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="These can also be modified from settings!"
+        android:textSize="15dp"
+        android:layout_weight="0.025"
+        android:layout_gravity="center_horizontal"/>
+
+    <ListView
+        android:id="@+id/lvSymptoms"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        android:layout_weight="0.8875"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"/>
+
+    <Button
+        android:id="@+id/bAddAssocSymptom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_weight="0.025"
+        android:text="Select other Symptoms"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.0375"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bSkip"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Skip"/>
+
+        <Button
+            android:id="@+id/bNext"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Next"/>
+
+    </LinearLayout>
+</LinearLayout>

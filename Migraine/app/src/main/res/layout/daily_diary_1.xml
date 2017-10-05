@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBody"
+    android:weightSum="9.0"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How long did you sleep last night?"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_weight="1.0"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1.0"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Hrs."
+                android:gravity="center_horizontal"/>
+
+            <Button
+                android:id="@+id/bInc1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="+"/>
+
+            <TextView
+                android:id="@+id/tvIncDec1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-5dp"
+                android:padding="5dp"
+                android:text="12"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/bDec1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-5dp"
+                android:text="-"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Mins."
+                android:gravity="center_horizontal"/>
+
+            <Button
+                android:id="@+id/bInc2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="+"/>
+
+            <TextView
+                android:id="@+id/tvIncDec2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-5dp"
+                android:padding="5dp"
+                android:text="30"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/bDec2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-5dp"
+                android:text="-"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quality of your sleep?"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_weight="1.0"
+        android:layout_gravity="center_horizontal"/>
+
+    <com.mit.migraine.SeekbarWithIntervals
+        android:id="@+id/seekbarWithIntervals1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:layout_centerInParent="true">
+    </com.mit.migraine.SeekbarWithIntervals>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How stressed are you now?"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_weight="1.0"
+        android:layout_gravity="center_horizontal"/>
+
+    <com.mit.migraine.SeekbarWithIntervals
+        android:id="@+id/seekbarWithIntervals2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:layout_centerInParent="true">
+    </com.mit.migraine.SeekbarWithIntervals>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do you have a headache?"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_weight="1.0"
+        android:layout_gravity="center_horizontal"/>
+
+    <Switch
+        android:id="@+id/sPain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:text="No"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bSkip"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Skip"/>
+
+        <Button
+            android:id="@+id/bNext"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Next"/>
+
+    </LinearLayout>
+
+</LinearLayout>
